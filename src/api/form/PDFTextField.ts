@@ -102,9 +102,9 @@ export default class PDFTextField extends PDFField {
    */
   getText(): string | undefined {
     const value = this.acroField.getValue();
-    if (!value && this.isRichFormatted()) {
-      throw new RichTextFieldReadError(this.getName());
-    }
+//     if (!value && this.isRichFormatted()) {
+//       throw new RichTextFieldReadError(this.getName());
+//     }
     return value?.decodeText();
   }
 
